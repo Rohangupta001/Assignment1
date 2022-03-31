@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zomato Clone</title>
+    <style>
+        body {
+            width: auto;
+            height: 1000px;
+            border: 1px solid grey;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+
+        header {
+            background-color: rgb(212, 69, 69);
+            color: whitesmoke;
+            width: auto;
+            min-height: 110px;
+        }
+
+        .header-left {
+            text-align: center;
+            float: left;
+            padding-left: 140px;
+            padding-top: 23px;
+        }
+
+        .header-right {
+            float: right;
+            padding-right: 10%;
+        }
+
+        .account {
+            background-color: rgb(212, 69, 69);
+            color: whitesmoke;
+            padding: 10px;
+            
+        }
+
+        aside {
+            height: 720px;
+            width: 160px;
+            border: 4px solid whitesmoke;
+            padding: 1px 19px;
+            margin-left: 150px;
+            float: left;
+        }
+
+        section {
+            float: left;
+        }
+
+        .card {
+            border: 4px solid whitesmoke;
+            padding-top: 1px 19px;
+            margin-left: 100px;
+            width: 800px;
+            height: 280px;
+            margin-bottom: 20px;
+        }
+
+        .left {
+            display: inline-block;
+            padding-right: 50px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .right {
+            display: inline-block;
+        }
+
+        button {
+            margin-top: 30px;
+            margin-right: 10px;
+            color: rgb(80, 80, 167);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo1.png" alt="Logo" width="60px" height="60px" style="border-radius: 100%;">
+        </div>
+        <div class="header-right">
+            <span style="padding-right: 30px;">Login</span>
+            <button class="account">Create an account</button>
+        </div>
+    </header>
+    <br>
+    <h1 style="padding-left: 150px;">Breakfast Places in Mumbai</h1>
+
+    <div class="wrapper">
+
+        <aside>
+            <h3>Filters</h3>
+            <p>Select Location</p>
+            <select name="City">
+                <option value="Select Location">----Select Location----</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Pune">Pune</option>
+            </select>
+            <h4>Cuisine</h4>
+            <label>
+                <input type="checkbox" value="South Indian" name="Food">North Indian
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" value="South Indian" name="Food">South Indian
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" value="Chinese" name="Food">Chinese
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" value="Fast Food" name="Food">Fast Food
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" value="Street Food" name="Food">Street Food
+            </label>
+            <br>
+            <h4>Cost For Two</h4>
+            <label>
+                <input type="radio" value="Less than `500" name="Budget">Less than `500
+            </label>
+            <br><br>
+            <label>
+                <input type="radio" value="`500 to `1000" name="Budget">`500 to `1000
+            </label>
+            <br><br>
+            <label>
+                <input type="radio" value="`1000 to `1500" name="Budget">`1000 to `1500
+            </label>
+            <br><br>
+            <label>
+                <input type="radio" value="`1500 to `2000" name="Budget">`1500 to `2000
+            </label>
+            <br><br>
+            <label>
+                <input type="radio" value="`2000+" name="Budget">`2000+
+            </label>
+            <br><br>
+            <h4>Sort</h4>
+            <label>
+                <input type="radio" value="Price low to high" name="Sort">Price low to high
+            </label>
+            <br><br>
+            <label>
+                <input type="radio" value="Price high to low" name="Sort">Price high to low
+            </label>
+            <br>
+        </aside>
+
+        <section>
+            <div class="card">
+                <div class="left">
+                    <img src="images/idli.jpg" width="150px" height="150px" alt="Shop1" style="border-radius: 20%;">
+                </div>
+                <div class="right">
+                    <p>
+                    <h1>The Big Chill Cakery</h1>
+                    <h3>Fort</h3>
+                    Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra
+                    </p>
+                </div>
+                <hr>
+                <br>
+                <table style="text-align: justify;">
+                    <tr>
+                        <th>
+                            <span style="padding-right: 60px;">CUISINES:</span>
+                        </th>
+                        <td>
+                            Bakery
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span style="padding-right: 40px;">COST FOR TWO:</span>
+                        </th>
+                        <td>
+                            700rs
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="card">
+                <div class="left">
+                    <img src="images/idli.jpg" width="150px" height="150px" alt="Shop2" style="border-radius: 20%;">
+                </div>
+                <div class="right">
+                    <p>
+                    <h1>The Bake Shop</h1>
+                    <h3>Fort</h3>
+                    Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra
+                    </p>
+                </div>
+                <hr>
+                <br>
+                <table style="text-align: justify;">
+                    <tr>
+                        <th>
+                            <span style="padding-right: 60px;">CUISINES</span>
+                        </th>
+                        <td>
+                            Bakery
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span style="padding-right: 40px;">COST FOR TWO</span>
+                        </th>
+                        <td>
+                            700rs
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button style="margin-left: 380px;">&#8606;</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>&#8608;</button>
+        </section>
+
+    </div>
+</body>
+
+</html>
